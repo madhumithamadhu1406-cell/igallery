@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #searchInput {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .photo {
+            margin: 10px;
+            border: 2px solid #ddd;
+            padding: 10px;
+            background-color: white;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.05);
+            border-color: #888;
+        }
+
+        .photo img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MADHUMITHA V (25016067)</h1>
+    <div class="gallery" id="photoGallery">
+        <div class="photo">
+            <img src="photo1.jpg" alt="photo1">
+            <div class="caption">photo1</div>
+        </div>
+        <div class="photo">
+            <img src="photo2.jpg" alt="photo2">
+            <div class="caption">photo2</div>
+        </div>
+        <div class="photo">
+            <img src="photo3.jpg" alt="photo3">
+            <div class="caption">photo3</div>
+        </div>
+        <div class="photo">
+            <img src="photo4.jpg" alt="photo4">
+            <div class="caption">photo4</div>
+        </div>
+        <div class="photo">
+            <img src="photo5.jpg" alt="photo5">
+            <div class="caption">photo5</div>
+        </div>
+    </div>
+
+    <script>
+        function filterPhotos() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const photos = document.querySelectorAll('.photo');
+
+            photos.forEach(photo => {
+                const caption = photo.querySelector('.caption').innerText.toLowerCase();
+                if (caption.includes(input)) {
+                    photo.style.display = 'block';
+                } else {
+                    photo.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
