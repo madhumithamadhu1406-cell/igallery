@@ -1,5 +1,5 @@
 # Ex.08 Design of Interactive Image Gallery
-## Date:
+## Date:08/10/2025
 
 ## AIM:
 To design a web application for an inteactive image gallery with minimum five images.
@@ -25,11 +25,84 @@ Validate the HTML and CSS code.
 Publish the website in the given URL.
 
 ## PROGRAM :
+```
+gallery.html
+
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="stylesheet" href="style1.css">
+        <script src="style2.js"></script>
+    </head>
+    <body>
+        <h1>MY GALLERY - Madhumitha V(25016067)</h1>
+        <div class="gallery">
+            <div class="galleryitem">
+                <img class="zoom" src="photo1.jpg" onmouseover="mousein()" onmouseout="mouseout()" id="photo">
+            </div>
+            <div class="galleryitem">
+                <img class="zoom" src="photo2.jpg" onmouseover="mousein()" onmouseout="mouseout()" id="photo">
+            </div>
+            <div class="galleryitem">
+                <img class="zoom" src="photo3.jpg" onmouseover="mousein()" onmouseout="mouseout()" id="photo">
+            </div>
+            <div class="galleryitem">
+                <img class="zoom" src="photo4.jpg" onmouseover="mousein()" onmouseout="mouseout()" id="photo">
+            </div>
+            <div class="galleryitem">
+                <img class="zoom" src="photo5.jpg" onmouseover="mousein()" onmouseout="mouseout()" id="photo">
+            </div>
+        </div>
+    </body>
+</html>
+
+style1.css
+
+body {
+    background-color: blue;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+    justify-content: center;;
+}
+
+.galleryitem {
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+}
+
+.galleryitem img {
+    width: 230px;
+    height: 300px;
+}
 
 
+style2.js
 
+function mousein()
+{
+    document.getElementById("photo").style.width="250";
+    document.getElementById("photo").style.height="350";
+}
+
+function mouseout()
+{
+    document.getElementById("photo").style.width="230";
+    document.getElementById("photo").style.height="300";
+}
+
+```
 
 ## OUTPUT:
+![alt text](<Screenshot 2025-10-07 233007.png>)
+![alt text](<Screenshot 2025-10-07 232847.png>)
 
 
 
