@@ -101,8 +101,9 @@ function mouseout()
 ```
 
 ## OUTPUT:
-![alt text](<Screenshot 2025-10-07 233007.png>)
-![alt text](<Screenshot 2025-10-07 232847.png>)
+<img width="1913" height="1072" alt="Screenshot 2025-10-07 233007" src="https://github.com/user-attachments/assets/bafde096-7af0-4d6f-b99d-944ce2152c5e" />
+<img width="1920" height="1080" alt="Screenshot 2025-10-07 232847" src="https://github.com/user-attachments/assets/40237de2-9a70-42c1-8699-83d81ff1f664" />
+
 
 
 
